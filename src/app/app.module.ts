@@ -8,6 +8,13 @@ import {MatButtonModule} from '@angular/material/button';
 import { LendComponent } from './lend/lend.component';
 import { ReturnComponent } from './return/return.component';
 import { BookComponent } from './book/book.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+
+import { MatToolbarModule } from  '@angular/material/toolbar';
+
 
 @NgModule({
   declarations: [
@@ -18,9 +25,14 @@ import { BookComponent } from './book/book.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
