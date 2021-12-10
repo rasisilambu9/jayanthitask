@@ -3,7 +3,7 @@
     <mat-toolbar-row>
         <span class="menu-spacer"></span>
         <div>
-            <button mat-icon-button>
+            <button mat-button>
                 <a routerLink="/"><mat-icon style="color:green;">home</mat-icon></a>
             </button>
             <a mat-button [routerLink]="'/lend'"> Lend </a>
@@ -23,3 +23,13 @@
 
 <!-- appending pages -->
 <router-outlet></router-outlet>
+
+<!-- home page content -->
+<h1><mat-icon class="book">menu_book</mat-icon>&emsp;A Library is a place vibrating with ideas&ensp;<mat-icon class="book">menu_book</mat-icon></h1>
+<h3>-Nancy Kunhardt Lodge</h3>
+
+<!-- button content -->
+<br>
+<a routerLink="/lend"><button mat-raised-button class="lend" color="basic">Lend Book</button></a>
+
+<a routerLink="/return"><button mat-raised-button class="return" color="basic">Return Book</button></a>

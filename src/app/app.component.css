@@ -2,6 +2,33 @@ h5{
     margin-left:950px;
     color:#fa4664;
 }
-a{
-    font-size: 20px;
+h1{
+    margin-top:15%;
+    margin-left:25%;
+    color:white;
+    font-family: cursive;
+}
+h3{
+    margin-top:2%;
+    margin-left:44%;
+    color:white;
+    font-family: cursive;
+}
+.lend{
+    margin-left: 44%;
+}
+.return{
+    margin-left:2%;
+}
+.book{
+    font-size: 48px;
+}
+.book:hover{
+    color:Red;
+}
+.lend:hover{
+  color:red;    
+}
+.return:hover{
+    color:red;
 }
