@@ -4,13 +4,20 @@
         <span class="menu-spacer"></span>
         <div>
             <button mat-icon-button>
-                <a routerLink="/"><mat-icon color="accent">home</mat-icon></a>
+                <a routerLink="/"><mat-icon style="color:green;">home</mat-icon></a>
             </button>
-            <a mat-button color="accent"[routerLink]="'/lend'"> Lend </a>
-            <a mat-button color="accent" [routerLink]="'/return'">Return </a>
-            <a mat-button  color="accent" [routerLink]="'/book'"> Books </a>
+            <a mat-button [routerLink]="'/lend'"> Lend </a>
+            <a mat-button  [routerLink]="'/return'">Return </a>
+            <a mat-button  [routerLink]="'/book'"> Books </a>
         </div>
-        <h5>Library Management System</h5>
+    <h5>
+        <span style="color:green;">Library</span>
+      
+        <span style="color:black;"> Management</span>
+        <span style="color:green;"> System</span>
+
+    </h5>
+   
     </mat-toolbar-row>
 </mat-toolbar>
 
