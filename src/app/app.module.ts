@@ -26,6 +26,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {matSelectAnimations, MatSelectModule} from '@angular/material/select';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import {matSelectAnimations, MatSelectModule} from '@angular/material/select';
     AppComponent,
     LendComponent,
     ReturnComponent,
-    BookComponent
+    BookComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
