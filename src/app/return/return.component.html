@@ -5,12 +5,12 @@
     <mat-card-content>
         <mat-form-field appearance="fill">
             <mat-label>Name*</mat-label>
-            <input matInput>
+            <input matInput class="name" >
         </mat-form-field>
         <br>
         <mat-form-field appearance="fill">
         <mat-label>Select Book</mat-label>
-            <mat-select>
+            <mat-select required>
                 <mat-option *ngFor="let food of foods" [value]="food.value">
                 {{food.viewValue}}
                 </mat-option>
@@ -19,15 +19,15 @@
         <br>
         <mat-form-field appearance="fill">
             <mat-label>User Access Id*</mat-label>
-            <input matInput>
+            <input matInput >
         </mat-form-field>
         <br>
         <mat-form-field appearance="fill">
             <mat-label>Return Date*</mat-label>
-            <input matInput>
+            <input matInput type="date">
         </mat-form-field>
         <br>
-        <button mat-raised-button color="accent">Return</button>
+        <button mat-raised-button color="accent" type="submit" class="return">Return</button>
           
     </mat-card-content>
 </mat-card>

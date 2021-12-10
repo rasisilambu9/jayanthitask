@@ -19,8 +19,19 @@
   $(document).ready(function(){
     $('.lendbutton').click(function(){
       var username = $('.name').val();
-      var bookname = $('mat-select').val();
-      alert("Book Successfully lend to "+username);
+      if(username==""){
+        alert('please fill required fields');
+      }else{
+      alert("Book Successfully lend to "+username);}
+    });
+    $('.return').click(function(){
+      var username = $('.name').val();
+      if(username==""){
+        alert("please fill required fields");
+
+      }else{
+      alert("Book Successfully returned by"+username);
+      }
     });
   });
 </script>
