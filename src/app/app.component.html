@@ -1,17 +1,18 @@
+<!-- toolbar -->
 <mat-toolbar color="primary">
-<mat-toolbar-row>
-    <button mat-icon-button>
-        <mat-icon>home</mat-icon>
-    </button>
-    <span class="menu-spacer"></span>
-    <div>
-      <a mat-button [routerLink]="'/lend'"> Lend </a>
-      <a mat-button [routerLink]="'/return'">Return </a>
-      <a mat-button [routerLink]="'/book'"> Books </a>
-    </div>
-    <h5>Library Management System</h5>
-</mat-toolbar-row>
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon>home</mat-icon>
+        </button>
+        <span class="menu-spacer"></span>
+        <div>
+          <a mat-button [routerLink]="'/lend'"> Lend </a>
+          <a mat-button [routerLink]="'/return'">Return </a>
+          <a mat-button [routerLink]="'/book'"> Books </a>
+        </div>
+        <h5>Library Management System</h5>
+    </mat-toolbar-row>
 </mat-toolbar>
 
-
+<!-- appending pages -->
 <router-outlet></router-outlet>
