@@ -25,6 +25,7 @@ import {MatCardModule} from '@angular/material/card';
 // form fields
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {matSelectAnimations, MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatTableModule,
     MatIconModule,
     MatCardModule,
+    MatSelectModule,
     MatInputModule
   ],
   providers: [],
