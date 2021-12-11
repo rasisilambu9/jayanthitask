@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 interface Food {
   value: string;
   viewValue: string;
@@ -25,6 +26,13 @@ export class LendComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $('.lendbutton').click(function(){
+      var username = $('.name').val();
+      if(username==""){
+        alert('please fill required fields');
+      }else{
+      alert("Book Successfully lend to "+username);}
+    });
   }
 
 }

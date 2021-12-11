@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 interface Food {
   value: string;
@@ -27,6 +28,15 @@ export class ReturnComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $('.return').click(function(){
+      var username = $('.name').val();
+      if(username==""){
+        alert("please fill required fields");
+
+      }else{
+      alert("Book Successfully returned by"+username);
+      }
+    });
   }
 
 }
